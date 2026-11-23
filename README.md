@@ -3,6 +3,15 @@
 PWA สแกน Serial Number (Service Tag) ของ Dell laptop จาก Data Matrix บนสติกเกอร์ใต้เครื่อง
 เป้าหมาย: Android + Chrome, มือถือทั่วไป, export CSV
 
+**ใช้งาน:** https://nimdaex.github.io/asset_scan/ (เปิดใน Chrome Android → เมนู ⋮ → ติดตั้งแอป)
+
+## Deploy
+
+ต้นฉบับอยู่ใน H-Project (`asset_scan/`) — repo public [nimdaex/asset_scan](https://github.com/nimdaex/asset_scan) เป็น snapshot สำหรับ GitHub Pages
+
+1. commit การแก้ไขใน H-Project
+2. `bash asset_scan/publish.sh "ข้อความ"` → push snapshot (author = GitHub noreply) → workflow `.github/workflows/deploy.yml` build + deploy (~1 นาที)
+
 ## สถานะ
 
 - 2026-11-23 — ประชุมเลือก tech stack: [docs/meeting-01-tech-stack.md](docs/meeting-01-tech-stack.md) (Flutter — ยกเลิก)
